@@ -1,6 +1,10 @@
 actualizarBotonCarrito();
 
-const carrito = JSON.parse(localStorage.getItem("carrito"));
+// operadores avanzados
+const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+console.log(carrito); 
+
+//const carrito = JSON.parse(localStorage.getItem("carrito"));
 const datos_formulario = JSON.parse(localStorage.getItem("datos_formulario"));
 const resumen_compra = document.getElementById("resumen_compra");
 let total_pagar = 0;

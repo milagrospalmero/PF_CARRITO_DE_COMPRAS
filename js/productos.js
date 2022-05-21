@@ -8,6 +8,10 @@ const productos = [
     {id:7, nombre:"CALEFACTOR ESTUFA EXTERIOR SIMIL MIMBRE", descripcion:" CALEFACTOR DE EXTERIOR GAS GARRAFA ; Calorías 10.000 Kcal/H; Combustible Gas Garrafa 10 kg; Consumo 450-870 g/h ; Presión de la bomba 28 Kpa/4 Psi; Radio de calefacción 6 Mts; Color Estilo Mimbre; Peso 17,5 Kg; Garantía 2 Años",  imagen:"../images/calefactor_estufa.jpg", precio:52214},
     {id:8, nombre:"CALEFACTOR DE EXTERIOR GAS GARRAFA ACERO INOX", descripcion:" CALEFACTOR DE EXTERIOR GAS GARRAFA ; Calorías 10.000 Kcal/H; Combustible Gas Garrafa 10 kg; Consumo 450-870 g/h ; Presión de la bomba 28 Kpa/4 Psi; Radio de calefacción 6 Mts; Color Estilo Mimbre; Peso 17,5 Kg; Garantía 2 Años",  imagen:"../images/CALEFACTOR_ACEROINOX.JPG", precio:41552}
 ];
+ 
+//operador avanzados
+const [a, b, c, d ,e , f , g , h] = productos;
+console.log(a, b, d , g , h); 
 
 function guardarProductosLS(productos) {
     localStorage.setItem("productos", JSON.stringify(productos));
@@ -21,3 +25,6 @@ function verProducto(id) {
     localStorage.setItem("ver_producto", id);
     document.location = "ver-producto.html";
 }
+
+
+
