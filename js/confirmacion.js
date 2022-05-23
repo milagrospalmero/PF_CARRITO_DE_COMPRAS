@@ -1,10 +1,8 @@
 actualizarBotonCarrito();
 
-// operadores avanzados
-const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-console.log(carrito); 
 
-//const carrito = JSON.parse(localStorage.getItem("carrito"));
+
+const carrito = JSON.parse(localStorage.getItem("carrito"));
 const datos_formulario = JSON.parse(localStorage.getItem("datos_formulario"));
 const resumen_compra = document.getElementById("resumen_compra");
 let total_pagar = 0;
@@ -33,6 +31,6 @@ contenido += `<div class='col-md-6 bg-light p-3'>
 </ul>
 </div>
 <div class='col-md-12 text-center p-5'>
-<button class='btn btn-dark'>Finalizar Compra</button>
+<button class='btn btn-dark' >Finalizar Compra</button>
 </div>`;
 resumen_compra.innerHTML = contenido;
